@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;700&display=swap');
+*{
+ position: relative;
+ padding: 0;
+ margin: 0;
+ cursor: url('/static/images/move.ico') ,auto;
+}  
+body,html{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+    position: relative;
+    overflow-x:hidden;
+    
+  }
+  li{
+    list-style: none;
+  }
+  th{
+    cursor: url('/static/images/click.ico') ,auto !important;
+    span{
+      cursor: url('/static/images/click.ico') ,auto !important;
+    }
+  }
+  ul.dateChange{
+     width: 300px;
+     height: 30px;
+     padding: 5px;
+     text-align: center;
+     transition: 0.6s;
+     
+     label{
+       float: left;
+       width: 50px;
+       cursor: url('/static/images/click.ico') ,auto !important;
+     }
+  }
+  .date-active{
+    background: #fff;
+    color: #000;
+  }
+  .datepicker_box{
+    
+    border: none;
+    background: none;
+    color: #727cf5;
+    border-radius: 3px;
+    padding: 4px 15px;
+    opacity: 1;
+    box-shadow: 0px 0px 0px 1px #727cf5 ;
+    margin-right: 8px;
+    &::-webkit-calendar-picker-indicator {
+    color: #fff;
+    opacity: 1;
+    display: block;
+    background-image: url(/static/images/date.svg);
+    width: 20px;
+    height: 20px;
+    border-width: thin;
+    cursor: url('/static/images/click.ico') ,auto;
+    }
+    &::-moz-calendar-picker-indicator {
+      color: #fff;
+      opacity: 1;
+      display: block;
+      background-image: url(/static/images/date.svg);
+      width: 20px;
+      height: 20px;
+      border-width: thin;
+      }
+ }
+   
+ .send-date{   
+    padding: 10px 40px ;
+    border: none;
+    background: #fff;
+    border-radius: 4px;
+    color:#000;
+    margin-left: 1em;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    cursor: url('/static/images/click.ico') ,auto !important;
+    &:hover {
+      color: #fff;
+      }
+    &::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 200%;
+    background: #727cf5;
+    left: 0;
+    top: 0;
+    border-radius: 0 0 50% 50%;
+    z-index: -1;
+    transition: 1s;
+    } 
+     &:hover::before {
+      width: 180%;
+      }  
+    
+ }
+  .page-content{
+    margin-top: 0em;
+    
+  }
+  
+ .page-enter-active,.page-leave-active{
+        transition: 0.5s;
+    }
+    .page-enter , .page-leave-to{
+        opacity: 0;
+    }
+
+.card{
+        position: relative;
+     
+      .fa-eye{
+          position: absolute;
+          right: 0;
+          top:0;
+          margin: 2em;
+          transform: scale(1.5);
+       }
+       .chart_loading{
+          position: absolute;
+          left: 45%;
+          top: 40%;
+          width: 70px;
+          height: 70px;
+        }  
+}   
+
+.download {
+  width: 50px;
+  height: 50px;
+  z-index: 1000000;
+  margin-right: 2em;
+  float: right;
+  cursor: url('/static/images/click.ico') ,auto !important;
+}
+.datepicker-group{
+  position: relative;
+}
+
+ul.tag-pagination{   // 選擇條 
+  display: flex;
+  justify-content: start;
+  margin-bottom: 5em;
+  label{
+       margin-left: 4em;
+       cursor: url('/static/images/click.ico') ,auto !important;
+  }
+  .active{
+      padding: 5px;
+      margin: 0 2em;
+      border-radius: 8px;
+      text-align: center;
+     background: #fff;
+     color:#000;
+     position: relative;
+     &::before {
+         content: "";
+         position: absolute;
+         left: 50%;
+         transform: translateX(-50%);
+         bottom: -7px;
+         width: 0;
+         height: 0;
+         border-style: solid;
+         border-width: 10px 10px 0 10px;
+         border-color: #fff transparent transparent transparent;
+         }
+  }
+
+ }
+
+ .fas.fa-eye{
+    font-size: 1.2em;
+    cursor: url('/static/images/click.ico') ,auto !important;
+
+ }
+ .fas.fa-exclamation-circle{
+  font-size: 1.2em;
+ }
+
+ .close-filter{
+  cursor: url('/static/images/click.ico') ,auto !important;
+ }
+
+.input-range{
+  vertical-align:bottom;
+}
+
+.card-title i{
+  opacity: 0.7;
+}

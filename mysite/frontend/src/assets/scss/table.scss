@@ -1,0 +1,38 @@
+.order-active {
+    background: #727cf5;
+    color: #fff;
+    padding: 10px;
+    line-height: 1cm;
+    border-radius: 2px;
+    position: relative;
+    transition: 0.3s;
+  }
+  .order-active::before {
+    content: "";
+    position: absolute;
+    left: 40%;
+    transform: translateX(-40%);
+    bottom: -7px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 10px 0 10px;
+    border-color: #727cf5 transparent transparent transparent;
+  }
+  .order-spna {
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    padding: 2px 5px;
+    color: #000;
+  }
+  .order-filter {
+    color: #fff;
+    opacity: 0.3;
+    padding: 3px;
+    margin-left: 1em;
+    border-radius: 3px;
+  }
+  .order-filter-active {
+    background: #eee;
+    color: #000;
+    opacity: 1;
+  }

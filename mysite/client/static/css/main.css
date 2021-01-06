@@ -1,0 +1,329 @@
+*{
+    font-family: 'Noto Sans JP', sans-serif;
+    position: relative;
+    cursor: pointer;
+}
+
+/* 導覽列 start  */  
+.nav-item {
+  margin-top: 0.5em;
+  border: none;
+}
+.nav-link{
+    color: #fff !important;
+    font-size: 1.5em;
+    border: none;
+}
+.line-final{
+    margin-left: 1.8em  !important;
+}
+
+/* 導覽列 end  */  
+
+.sidebar-brand span{
+   margin-left: 10px;
+}
+
+.nav-link  img{
+    width: 30px !important;
+    height: 30px !important;  
+}
+.dropdown-toggle{
+    font-size: 1em;
+}
+
+.wrapperbox{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    
+}
+
+.dropdown-filter{
+    width: 100% ;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10000;
+    background: #2E3E5A;
+    z-index: 100000;
+    display: none;
+
+}
+.dropdown-view{
+    display: block;
+}
+
+.title-filter{
+
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+ }
+ 
+.wrpapperbox-set{
+    margin-top: 30px;
+}
+
+.labelbox{
+    padding: 30px ;
+    margin: 1em 1em ;
+    display: inline-block;
+    position: relative;
+   
+}
+.labelbox label{
+    display: block;
+    margin: 0;
+    width: 100%;
+    color: #fff;
+    
+}
+
+.labelbox label input {
+   margin-right: 10px;
+   border-radius: 5px;
+}
+.labelbox h4{
+ 
+    margin-top: -10px;
+    
+    color: #fff;
+    padding: 10px;
+
+}
+.label-wrapper{
+   margin:10px;
+   width: 200px;
+   height: 100%;
+   padding: 0.5em 0.3em;
+   margin-left: 50%;
+   transform:  translateX(-53%);
+   overflow: scroll;
+   height: 200px;
+   white-space:nowrap;
+   font-size: 1em;
+}
+
+
+::-webkit-scrollbar {
+    min-width: 12px;
+    width: 12px;
+    max-width: 12px;
+    min-height: 12px;
+    height: 12px;
+    max-height: 12px;
+    background-color: none;
+ }
+ ::-webkit-scrollbar-thumb {
+    background: #2E3E5A;
+    border: solid 3px #fff;
+
+    border-radius: 100px;
+ }
+ ::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.2);
+ }
+ ::-webkit-scrollbar-thumb:active {
+    background: rgba(255, 255, 255, 0.2);
+ }
+ ::-webkit-scrollbar-button {
+    display: none;
+    height: 0px;
+ }
+ .button-item{
+   margin-left: 50%;
+   transform: translateX(-35%);
+   z-index: 2;
+ }
+ .send-filter{
+     
+     border: 3px solid #fff;
+     color: #fff;
+     background:none;
+     font-size: 2em;
+     padding: 5px 30px; 
+     border-radius: 6px;
+     transition: 0.8s;
+     position: relative;
+     overflow: hidden;
+     margin-left: 1em;
+     
+ }
+ .send-filter-send{
+  background: #fff !important;
+  color:  #2E3E5A;
+ }
+ .send-filter:hover {
+    color: #fff;
+    padding: 5px 35px; 
+ }
+ .send-filter::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    background: #727cf5;
+    left: 0;
+    top: 0;
+    border-radius: 0 0 50% 50%;
+    z-index: -1;
+    transition: 1s;
+ }
+ .send-filter:hover::before {
+    height: 180%;
+ }
+ .ga-filter-style{
+   position: absolute;
+   right: 0;
+   border: none;
+   width: 100px;
+   height: 100px;
+   background: #fff;
+   color:#000;
+   border-radius: 50%;
+   transition: 0.6s;
+}
+.ga-filter-style img{
+   width: 50px;
+   height: 50px;
+}
+
+.ga-filter-style:hover{
+   width: 150px;
+   height: 150px;
+}
+
+
+ 
+
+ .wrapper_back{
+    position: fixed;
+    top: 2%;
+    left: 2%; 
+    font-size: 1em;
+    z-index: 10000000
+ }
+ .wrapper_back i{
+    font-size: 4em;
+ }
+
+ .wrapper_back i:hover{
+   font-size: 5em;
+   transition: 0.8s;
+ }
+.search_box{
+   margin-top: 0.5em;
+   width: 100%;
+   margin-left: 1%;
+   border: none;
+   border-radius: 5px;
+   padding: 0.5em;
+}
+.all-title-page{
+   margin: 1em;  /* 該頁面的分頁標題 */
+}
+.all-big-title{
+  background: #fff;
+  color: #000; /* 每頁的大標題 */
+  padding: 1em;
+  border-radius: 4px;
+}
+
+
+.tag-pagination{
+   position: relative;
+}
+.tag-pagination label{
+   padding: 10px;
+   border-radius: 4px;
+}
+.tag-pagination input{
+   opacity: 0;
+   position: absolute;
+}
+.tag-page-active{
+   background: #727cf5;
+   color:#fff;
+}
+
+.time-dorento-now{
+   margin: 1em 2em;
+}
+.time-dorento-now span{
+    display: inline-block;
+    padding: 10px;
+ 
+    color :#fff;
+    border-radius: 4px;
+}
+.time-dorento-now .time-title{
+   background: none;
+   color:#fff;
+}
+
+.order-active{
+   background: #727cf5;
+   color:#fff;
+   padding: 10px;
+   line-height: 1cm;
+   border-radius: 2px;
+   position: relative;
+   transition: 0.3s;
+  
+}
+.order-active::before{
+    content: "";
+    position: absolute;
+    left: 40%;
+    transform: translateX(-40%);
+    bottom: -7px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 10px 0 10px;
+    border-color:  #727cf5 transparent transparent transparent;
+}
+.order-spna{
+ 
+   background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+   padding: 2px 5px;
+   color:#000;
+}
+
+.chratbox{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: 100000;
+}
+
+.card{
+   position: relative;
+}
+.fa-eye{
+   position: absolute;
+   right: 0;
+   top:0;
+   margin: 2em;
+   transform: scale(1.5);
+}
+
+.order-filter{
+   color: #fff;
+   opacity: 0.3;
+   padding: 3px;
+   margin-left: 1em;
+   border-radius: 3px;
+}
+.order-filter-active{
+   background: #eee;
+   color:#000;
+   opacity: 1;
+}
